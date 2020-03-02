@@ -1,4 +1,17 @@
-# Linux 4 noobs
+# Linux4noobs           
+<h1 align="center">
+<br>
+  <img src="./images/Tux.svg" alt="tux" width="120">
+<br>
+</h1>
+
+<p align="center">Tutorial De Linux para iniciantes em Programação.</p>
+
+<p align="center">
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License MIT">
+  </a>
+</p>
 
 # ROADMAP
 
