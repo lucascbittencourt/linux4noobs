@@ -1,4 +1,6 @@
-> # CD
+# 02 - Comandos básicos
+
+> # cd
 
 O comando `cd` é um acrônimo para "change directory" e serve para navegar do diretório atual para outro especificado em seguida.
 
@@ -22,7 +24,7 @@ Resultado:
 lucashe4rt@He4rt-PC:/$
 ```
 
-> # LS
+> # ls
 
 Com o comando `ls` podemos visualizar o conteúdo de um diretório e também informações sobre arquivos, informando dados como nomes de arquivos, permissões, proprietários e datas de criação, além de inúmeras opções para exibir as informações de diversas formas.
 
@@ -132,3 +134,152 @@ go  aur  Images  Games-Wine  Games  Downloads  Documents  Desktop
 ```
 
 *Nós também podemos juntar os comandos, por exemplo `ls -la`*.
+
+> # df
+
+O comando `df` mostra o espaço livre/ocupado de cada partição. Pode ser utilizado junto com várias opções, se for utilizado sozinho, mostrará o espaço usado e disponível de todos os sistemas de arquivos atualmente montados.
+
+Sintaxe:
+
+```console
+df [opções]
+```
+
+Exemplo:
+```console
+lucas@He4rt-Notebook:~$ df
+Filesystem     1K-blocks     Used Available Use% Mounted on
+dev              4028428        0   4028428   0% /dev
+run              4036824      892   4035932   1% /run
+/dev/sda1      114041020 10761904  97443136  10% /
+tmpfs            4036824    56924   3979900   2% /dev/shm
+tmpfs            4036824        0   4036824   0% /sys/fs/cgroup
+tmpfs            4036824        4   4036820   1% /tmp
+tmpfs             807364       12    807352   1% /run/user/1001
+```
+Algumas opções do  `df`:
+
+* `-a` - Inclui sistema de arquivos com 0 (zero) blocos. Exemplo:
+```console
+lucas@He4rt-Notebook:~$ df -a
+Filesystem     1K-blocks     Used Available Use% Mounted on
+proc                   0        0         0    - /proc
+sys                    0        0         0    - /sys
+dev              4028428        0   4028428   0% /dev
+run              4036824      892   4035932   1% /run
+/dev/sda1      114041020 10761900  97443140  10% /
+securityfs             0        0         0    - /sys/kernel/security
+tmpfs            4036824    47708   3989116   2% /dev/shm
+devpts                 0        0         0    - /dev/pts
+tmpfs            4036824        0   4036824   0% /sys/fs/cgroup
+cgroup2                0        0         0    - /sys/fs/cgroup/unified
+cgroup                 0        0         0    - /sys/fs/cgroup/systemd
+pstore                 0        0         0    - /sys/fs/pstore
+none                   0        0         0    - /sys/fs/bpf
+cgroup                 0        0         0    - /sys/fs/cgroup/devices
+cgroup                 0        0         0    - /sys/fs/cgroup/hugetlb
+cgroup                 0        0         0    - /sys/fs/cgroup/pids
+cgroup                 0        0         0    - /sys/fs/cgroup/rdma
+cgroup                 0        0         0    - /sys/fs/cgroup/cpuset
+cgroup                 0        0         0    - /sys/fs/cgroup/perf_event
+cgroup                 0        0         0    - /sys/fs/cgroup/net_cls,net_prio
+cgroup                 0        0         0    - /sys/fs/cgroup/freezer
+cgroup                 0        0         0    - /sys/fs/cgroup/cpu,cpuacct
+cgroup                 0        0         0    - /sys/fs/cgroup/blkio
+cgroup                 0        0         0    - /sys/fs/cgroup/memory
+systemd-1              0        0         0    - /proc/sys/fs/binfmt_misc
+mqueue                 0        0         0    - /dev/mqueue
+hugetlbfs              0        0         0    - /dev/hugepages
+debugfs                0        0         0    - /sys/kernel/debug
+configfs               0        0         0    - /sys/kernel/config
+tmpfs            4036824        4   4036820   1% /tmp
+tmpfs             807364       12    807352   1% /run/user/1001
+```
+* `-h` - Mostra o espaço livre/ocupado em MB, KB, GB em vez de bloco. Exemplo:
+
+```console
+lucas@He4rt-Notebook:~$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+dev             3.9G     0  3.9G   0% /dev
+run             3.9G  892K  3.9G   1% /run
+/dev/sda1       109G   11G   93G  10% /
+tmpfs           3.9G   47M  3.9G   2% /dev/shm
+tmpfs           3.9G     0  3.9G   0% /sys/fs/cgroup
+tmpfs           3.9G  4.0K  3.9G   1% /tmp
+tmpfs           789M   12K  789M   1% /run/user/1001
+```
+* `-k` - Lista em Kbyts. Exemplo:
+```console
+lucas@He4rt-Notebook:~$ df -k
+Filesystem     1K-blocks     Used Available Use% Mounted on
+dev              4028428        0   4028428   0% /dev
+run              4036824      892   4035932   1% /run
+/dev/sda1      114041020 10762012  97443028  10% /
+tmpfs            4036824    47692   3989132   2% /dev/shm
+tmpfs            4036824        0   4036824   0% /sys/fs/cgroup
+tmpfs            4036824      100   4036724   1% /tmp
+tmpfs             807364       12    807352   1% /run/user/1001
+```
+
+* `-l` - Somente lista sistema de arquivos locais. Exemplo:
+```console
+lucas@He4rt-Notebook:~$ df -l
+Filesystem     1K-blocks     Used Available Use% Mounted on
+dev              4028428        0   4028428   0% /dev
+run              4036824      892   4035932   1% /run
+/dev/sda1      114041020 10761976  97443064  10% /
+tmpfs            4036824    47676   3989148   2% /dev/shm
+tmpfs            4036824        0   4036824   0% /sys/fs/cgroup
+tmpfs            4036824      148   4036676   1% /tmp
+tmpfs             807364       12    807352   1% /run/user/1001
+```
+
+* `-m` - Lista em Mbytes. Exemplo:
+```console
+lucas@He4rt-Notebook:~$ df -m
+Filesystem     1M-blocks  Used Available Use% Mounted on
+dev                 3935     0      3935   0% /dev
+run                 3943     1      3942   1% /run
+/dev/sda1         111369 10510     95160  10% /
+tmpfs               3943    47      3896   2% /dev/shm
+tmpfs               3943     0      3943   0% /sys/fs/cgroup
+tmpfs               3943     1      3943   1% /tmp
+tmpfs                789     1       789   1% /run/user/1001
+```
+
+* `-T` - Lista o tipo de sistema de arquivos de cada partição. Exemplo:
+```console
+lucas@He4rt-Notebook:~$ df -T 
+Filesystem     Type     1K-blocks     Used Available Use% Mounted on
+dev            devtmpfs   4028428        0   4028428   0% /dev
+run            tmpfs      4036824      892   4035932   1% /run
+/dev/sda1      ext4     114041020 10761984  97443056  10% /
+tmpfs          tmpfs      4036824    47708   3989116   2% /dev/shm
+tmpfs          tmpfs      4036824        0   4036824   0% /sys/fs/cgroup
+tmpfs          tmpfs      4036824      116   4036708   1% /tmp
+tmpfs          tmpfs       807364       12    807352   1% /run/user/1001
+```
+
+> # top
+
+> # cat
+
+> # man
+
+> # find
+
+> # pwd
+
+> # date
+
+> # kill
+
+> # ifconfig
+
+> # exit
+
+---
+## Referencias:
+[Devmedia - comando importantes linux](https://www.devmedia.com.br/comandos-importantes-linux/23893)
+
+[vivaolinux - usando o comando df](https://www.vivaolinux.com.br/dica/Usando-o-comando-df)
