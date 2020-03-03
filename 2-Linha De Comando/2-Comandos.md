@@ -13,7 +13,7 @@ cd [diretório]
 Exemplo:
 
 ```console
-lucashe4rt@He4rt-PC:~$ cd / 
+lucashe4rt@He4rt:~$ cd / 
 ```
 
 * O caractér `/` identifica o diretório raiz do nosso sistema de arquivos.
@@ -21,7 +21,7 @@ lucashe4rt@He4rt-PC:~$ cd /
 Resultado:
 
 ```console
-lucashe4rt@He4rt-PC:/$
+lucashe4rt@He4rt:/$
 ```
 
 > # ls
@@ -39,7 +39,7 @@ Algumas opções do `ls`:
 * `-a` - Mostra todos os arquivos, incluindo os ocultos. Exemplo:
 
 ```console
-lucashe4rt@He4rt-PC:~$ ls -a
+lucashe4rt@He4rt:~$ ls -a
 .                .bashrc     .java               .themes     Downloads
 ..               .cache      .local              .viminfo    Games
 .ICEauthority    .config     .mozilla            .vscode     Games-Wine
@@ -54,7 +54,7 @@ lucashe4rt@He4rt-PC:~$ ls -a
 * `-A` - Semelhante ao `-a`, mas não mostra o diretório corrente (`.`) ou o diretório acima (`..`). Exemplo:
 
 ```console
-lucashe4rt@He4rt-PC:~$ ls -A
+lucashe4rt@He4rt:~$ ls -A
 .ICEauthority    .config     .mozilla            .vscode     Games-Wine
 .PhpStorm2019.3  .eclipse    .mysql_history      .wget-hsts  Images
 .Xauthority      .gitconfig  .node_repl_history  .wine32     aur
@@ -76,7 +76,7 @@ lucashe4rt@He4rt-PC:~$ ls -A
 
 * `-l` - Formato longo, mostra permissões, número de links, propietário, grupo, tamanho, data de modificação e nome do arquivo. Exemplo:
 ```console
-lucashe4rt@He4rt-PC:~$ ls -l
+lucashe4rt@He4rt:~$ ls -l
 total 1032
 drwxrwxr-x  2 lucashe4rt lucashe4rt    4096 Feb 23 11:57 Desktop
 drwxr-xr-x 13 lucashe4rt lucashe4rt    4096 Feb 29 23:38 Documents
@@ -90,14 +90,14 @@ drwxr-xr-x  3 lucashe4rt lucashe4rt    4096 Feb 29 16:37 go
 
 * `-m` - Arquivos listados em sequência, separados por vírgula. Exemplo:
 ```console
-lucashe4rt@He4rt-PC:~$ ls -m
+lucashe4rt@He4rt:~$ ls -m
 Desktop, Documents, Downloads, Games, Games-Wine, Images, aur, go
 ```
 
 * `-n` - Semelhante ao `-l`, porém mostra UID E GID Em vez de nomes de proprietário e grupo. Exemplo:
 
 ```console
-[23:42:15] lucashe4rt@He4rt-PC:~$ ls -n
+[23:42:15] lucashe4rt@He4rt:~$ ls -n
 total 36
 drwxrwxr-x  2 1000 1000 4096 Feb 23 11:57 Desktop
 drwxr-xr-x 13 1000 1000 4096 Feb 29 23:38 Documents
@@ -124,12 +124,12 @@ drwxr-xr-x  3 lucashe4rt 4096 Feb 29 16:37 go
 * `-p` - Mostra uma barra(/) na frente de nomes de diretórios. Exemplo:
 
 ```console
-lucashe4rt@He4rt-PC:~$ ls -p
+lucashe4rt@He4rt:~$ ls -p
 Desktop/  Documents/  Downloads/  Games/  Games-Wine/  Images/  aur/  go/
 ```
 * `-r` - Ordem reversa. Exemplo:
 ```console
-lucashe4rt@He4rt-PC:~$ ls -r
+lucashe4rt@He4rt:~$ ls -r
 go  aur  Images  Games-Wine  Games  Downloads  Documents  Desktop
 ```
 
@@ -147,7 +147,7 @@ df [opções]
 
 Exemplo:
 ```console
-lucas@He4rt-Notebook:~$ df
+lucashe4rt@He4rt:~$ df
 Filesystem     1K-blocks     Used Available Use% Mounted on
 dev              4028428        0   4028428   0% /dev
 run              4036824      892   4035932   1% /run
@@ -161,7 +161,7 @@ Algumas opções do  `df`:
 
 * `-a` - Inclui sistema de arquivos com 0 (zero) blocos. Exemplo:
 ```console
-lucas@He4rt-Notebook:~$ df -a
+lucashe4rt@He4rt:~$ df -a
 Filesystem     1K-blocks     Used Available Use% Mounted on
 proc                   0        0         0    - /proc
 sys                    0        0         0    - /sys
@@ -198,7 +198,7 @@ tmpfs             807364       12    807352   1% /run/user/1001
 * `-h` - Mostra o espaço livre/ocupado em MB, KB, GB em vez de bloco. Exemplo:
 
 ```console
-lucas@He4rt-Notebook:~$ df -h
+lucashe4rt@He4rt:~$ df -h
 Filesystem      Size  Used Avail Use% Mounted on
 dev             3.9G     0  3.9G   0% /dev
 run             3.9G  892K  3.9G   1% /run
@@ -210,7 +210,7 @@ tmpfs           789M   12K  789M   1% /run/user/1001
 ```
 * `-k` - Lista em Kbyts. Exemplo:
 ```console
-lucas@He4rt-Notebook:~$ df -k
+lucashe4rt@He4rt:~$ df -k
 Filesystem     1K-blocks     Used Available Use% Mounted on
 dev              4028428        0   4028428   0% /dev
 run              4036824      892   4035932   1% /run
@@ -223,7 +223,7 @@ tmpfs             807364       12    807352   1% /run/user/1001
 
 * `-l` - Somente lista sistema de arquivos locais. Exemplo:
 ```console
-lucas@He4rt-Notebook:~$ df -l
+lucashe4rt@He4rt:~$ df -l
 Filesystem     1K-blocks     Used Available Use% Mounted on
 dev              4028428        0   4028428   0% /dev
 run              4036824      892   4035932   1% /run
@@ -236,7 +236,7 @@ tmpfs             807364       12    807352   1% /run/user/1001
 
 * `-m` - Lista em Mbytes. Exemplo:
 ```console
-lucas@He4rt-Notebook:~$ df -m
+lucashe4rt@He4rt:~$ df -m
 Filesystem     1M-blocks  Used Available Use% Mounted on
 dev                 3935     0      3935   0% /dev
 run                 3943     1      3942   1% /run
@@ -249,7 +249,7 @@ tmpfs                789     1       789   1% /run/user/1001
 
 * `-T` - Lista o tipo de sistema de arquivos de cada partição. Exemplo:
 ```console
-lucas@He4rt-Notebook:~$ df -T 
+lucashe4rt@He4rt:~$ df -T 
 Filesystem     Type     1K-blocks     Used Available Use% Mounted on
 dev            devtmpfs   4028428        0   4028428   0% /dev
 run            tmpfs      4036824      892   4035932   1% /run
@@ -259,16 +259,116 @@ tmpfs          tmpfs      4036824        0   4036824   0% /sys/fs/cgroup
 tmpfs          tmpfs      4036824      116   4036708   1% /tmp
 tmpfs          tmpfs       807364       12    807352   1% /run/user/1001
 ```
-
-> # top
-
 > # cat
 
+O comando `cat`, derivação da palavra concatenate, permite que a gente crie, una e exiba arquivos no formato padrão de tela ou em outro arquivo, entre outras funcionalidades.
+
+Sintaxe:
+
+```console
+cat [opção] [arquivo]
+```
+Exemplo:
+
+```console
+lucashe4rt@He4rt-PC:~$ cat arquivo.txt 
+da estrela ai se vc ta curtindo
+manda pros amigo tb
+vc é d+++
+```
+Algumas opções do comando `cat`:
+
+* `-E` - Marca o término de linha mostrando o caractere __$__ ao final de cada uma delas. Exemplo:
+
+```console
+lucashe4rt@He4rt-PC:~$ cat -E arquivo.txt 
+da estrela ai se vc ta curtindo$
+manda pros amigo tb$
+vc é d+++$
+```
+
+* `-n` - Mostra a quantidade de linas do arquivo. Exemplo:
+```console
+lucashe4rt@He4rt-PC:~$ cat -n arquivo.txt 
+     1	da estrela ai se vc ta curtindo
+     2	manda pros amigo tb
+     3	vc é d+++
+```
+
+* `-v` - Exibe caracteres não exibíveis. Exemplo:
+```console
+lucashe4rt@He4rt-PC:~$ cat -v arquivo.txt 
+da estrela ai se vc ta curtindo
+manda pros amigo tb
+vc M-CM-) d+++
+```
+
+* `-T` - Exibe tabulação mostradas como __^I__. Exemplo:
+```console
+lucashe4rt@He4rt-PC:~$ cat -T arquivo.txt 
+da estrela ai se vc ta curtindo
+manda pros amigo tb
+vc é d+++
+
+
+
+
+^ISegue o melhor grupo de desenvolvimento lá
+^Ino 
+^I
+^Itwitter: @He4rtDevs
+```
+
+* `-s` - Remove linhas repetidas em branco. Exemplo:
+```console
+lucashe4rt@He4rt-PC:~$ cat -s arquivo.txt 
+da estrela ai se vc ta curtindo
+manda pros amigo tb
+vc é d+++
+
+	Segue o melhor grupo de desenvolvimento lá
+	no 
+	
+	twitter: @He4rtDevs
+```
+
+*Obs: essa opção mantém uma linha vazia e remove as linhas repetidas em branco.*
+
+* `-b` - Numera as linhas que possuem algum conteúdo. Exemplo:
+```console
+lucashe4rt@He4rt-PC:~$ cat -b arquivo.txt 
+     1	da estrela ai se vc ta curtindo
+     2	manda pros amigo tb
+     3	vc é d+++
+
+
+
+
+     4		Segue o melhor grupo de desenvolvimento lá
+     5		no 
+     6		
+     7		twitter: @He4rtDevs
+```
+*Obs: essa opção sobrescreve a opção `-n`.*
+
+* `tac` - Exibe o conteúdo do arquivo em ordem contrária, da primeira à ultima linha. Exemplo:
+
+```console
+twitter: @He4rtDevs
+	
+	no 
+	Segue o melhor grupo de desenvolvimento lá
+
+
+
+
+vc é d+++
+manda pros amigo tb
+da estrela ai se vc ta curtindo
+```
 > # man
 
 > # find
-
-> # pwd
 
 > # date
 
