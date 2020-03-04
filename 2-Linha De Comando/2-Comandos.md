@@ -573,12 +573,34 @@ lucashe4rt@He4rt-PC:~$
 lucashe4rt@He4rt-PC:~$ killall Discord
 lucashe4rt@He4rt-PC:~$ 
 ```
+
+> # clear
+
+O comando `clear` serve para limparmos o conteúdo do terminal.
+
+Sintaxe:
+
+```console
+clear
+```
+
+Exemplo
+```console
+lucashe4rt@He4rt-PC:~$ clear
+```
+
+*Obs: podemos também apenas apertar `CTRL + L` e limparemos nosso terminal da mesma forma.*
+
 ---
 ## Referencias:
 [Devmedia - comando importantes linux](https://www.devmedia.com.br/comandos-importantes-linux/23893)
+
+[Bóson Treinamentos - comando ls](https://www.youtube.com/watch?v=BIksX9l1Hvo) (vídeo)
 
 [Vivaolinux - usando o comando df](https://www.vivaolinux.com.br/dica/Usando-o-comando-df)
 
 [Hostinger - comando cat linux](https://www.hostinger.com.br/tutoriais/comando-cat-linux/)
 
 [Guia Linux - ps](http://guialinux.uniriotec.br/ps/)
+
+[Hostinger - comando kill linux](https://www.hostinger.com.br/tutoriais/comando-kill-linux/)
