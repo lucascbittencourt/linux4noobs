@@ -366,20 +366,219 @@ vc é d+++
 manda pros amigo tb
 da estrela ai se vc ta curtindo
 ```
-> # man
 
-> # find
+> # ps
 
-> # date
+O comando `ps` exibe informações sobre os processos que estão executando na máquina.
+
+Sintaxe: 
+
+```console
+ps [opções]
+```
+
+Exemplo:
+
+```console
+lucashe4rt@He4rt-PC:~$ ps
+    PID TTY          TIME CMD
+  14461 pts/0    00:00:00 bash
+  14466 pts/0    00:00:00 ps
+```
+
+Algumas opções do comando `ps`:
+
+* `-a` - Mostra os processos de todos os usuários. Exemplo:
+```console
+lucashe4rt@He4rt-PC:~$ ps -a
+    PID TTY          TIME CMD
+  14631 pts/0    00:00:00 ps
+```
+
+* `-A` ou `-e` - Mostra todos os processos. Exemplo:
+
+```console
+lucashe4rt@He4rt-PC:~$ ps -e
+    PID TTY          TIME CMD
+      1 ?        00:00:01 systemd
+      2 ?        00:00:00 kthreadd
+      3 ?        00:00:00 rcu_gp
+      4 ?        00:00:00 rcu_par_gp
+      6 ?        00:00:00 kworker/0:0H-kblockd
+      8 ?        00:00:00 mm_percpu_wq
+      9 ?        00:00:03 ksoftirqd/0
+     10 ?        00:00:00 rcuc/0
+     11 ?        00:00:14 rcu_preempt
+     12 ?        00:00:00 rcub/0
+     13 ?        00:00:00 migration/0
+     14 ?        00:00:00 idle_inject/0
+     16 ?        00:00:00 cpuhp/0
+     17 ?        00:00:00 cpuhp/1
+     18 ?        00:00:00 idle_inject/1
+     19 ?        00:00:00 migration/1
+     20 ?        00:00:00 rcuc/1
+     21 ?        00:00:03 ksoftirqd/1
+     23 ?        00:00:00 kworker/1:0H-kblockd
+     24 ?        00:00:00 cpuhp/2
+     25 ?        00:00:00 idle_inject/2
+     26 ?        00:00:00 migration/2
+     27 ?        00:00:00 rcuc/2
+  14461 pts/0    00:00:00 bash
+  14721 pts/0    00:00:00 ps
+```
+*obs: eu removi alguns processos para o exemplo não tomar um espaço muito grande na tela.*
+
+* `-f` - Mostra a árvore de execução de comandos. Exemplo:
+
+```console
+lucashe4rt@He4rt-PC:~$ ps -f
+UID          PID    PPID  C STIME TTY          TIME CMD
+lucashe+   14461   14455  0 11:10 pts/0    00:00:00 bash
+lucashe+   14959   14461  0 11:17 pts/0    00:00:00 ps -f
+```
+
+* `-g [grupo]` - Mostra os processos de um determinado grupo. Exemplo: 
+
+```console
+lucashe4rt@He4rt-PC:~$ ps -g lucashe4rt
+    PID TTY          TIME CMD
+    607 ?        00:00:00 systemd
+    608 ?        00:00:00 (sd-pam)
+    614 ?        00:00:03 xfce4-session
+    619 ?        00:00:19 dbus-daemon
+    645 ?        00:00:00 gvfsd
+    650 ?        00:00:00 gvfsd-fuse
+    662 ?        00:00:00 at-spi-bus-laun
+    668 ?        00:00:00 dbus-daemon
+    670 ?        00:00:00 xfconfd
+    676 ?        00:00:01 at-spi2-registr
+    695 ?        00:00:00 ssh-agent
+    698 ?        00:00:01 gpg-agent
+    721 ?        00:21:34 pulseaudio
+    722 ?        00:00:01 xfsettingsd
+    743 ?        00:00:23 xfce4-panel
+    752 ?        00:00:00 Thunar
+    757 ?        00:00:03 xfdesktop
+    768 ?        00:00:04 xfce4-power-man
+    769 ?        00:10:09 pulseeffects
+    772 ?        00:00:00 polkit-gnome-au
+    774 ?        00:00:00 nm-applet
+    781 ?        00:00:03 xfce4-screensav
+    788 ?        00:00:00 gvfs-udisks2-vo
+    796 ?        00:00:01 xfce4-notifyd
+    816 ?        00:00:00 gsettings-helpe
+    834 ?        00:00:00 dconf-service
+    837 ?        00:00:01 panel-6-systray
+    838 ?        00:00:49 panel-8-pulseau
+    839 ?        00:00:00 panel-4-actions
+    840 ?        00:00:01 panel-7-whisker
+   5835 ?        00:02:15 xfwm4
+  14455 ?        00:00:03 xfce4-terminal
+  14461 pts/0    00:00:00 bash
+  15181 pts/0    00:00:00 ps
+```
+
+* `-x` - Mostra os processos que não foram iniciados no console. Exemplo:
+
+```console
+lucashe4rt@He4rt-PC:~$ ps -x
+    PID TTY      STAT   TIME COMMAND
+    607 ?        Ss     0:00 /usr/lib/systemd/systemd --user
+    608 ?        S      0:00 (sd-pam)
+    614 ?        Sl     0:04 xfce4-session
+    619 ?        Ss     0:19 /usr/bin/dbus-daemon --session --address=systemd: -
+    645 ?        Ssl    0:00 /usr/lib/gvfsd
+    650 ?        Sl     0:00 /usr/lib/gvfsd-fuse /run/user/1000/gvfs -f
+    662 ?        Ssl    0:00 /usr/lib/at-spi-bus-launcher
+    668 ?        S      0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defau
+    670 ?        Sl     0:00 /usr/lib/xfce4/xfconf/xfconfd
+    676 ?        Sl     0:01 /usr/lib/at-spi2-registryd --use-gnome-session
+    695 ?        Ss     0:00 /usr/bin/ssh-agent -s
+    698 ?        SLs    0:01 /usr/bin/gpg-agent --supervised
+    721 ?        S<sl  21:42 /usr/bin/pulseaudio --daemonize=no
+    722 ?        Ssl    0:01 xfsettingsd --display :0.0 --sm-client-id 29a399bd9
+    743 ?        Sl     0:24 xfce4-panel --display :0.0 --sm-client-id 26ec8bf39
+    752 ?        Sl     0:00 Thunar --sm-client-id 21fca4347-2f3d-49a9-87bf-6fa9
+    757 ?        Sl     0:03 xfdesktop --display :0.0 --sm-client-id 241e9ced4-5
+    768 ?        Ssl    0:04 xfce4-power-manager --restart --sm-client-id 2b0551
+    769 ?        Sl    10:15 pulseeffects --gapplication-service
+    772 ?        Sl     0:00 /usr/lib/polkit-gnome/polkit-gnome-authentication-a
+    774 ?        Sl     0:00 nm-applet
+    781 ?        Sl     0:03 xfce4-screensaver
+    788 ?        Ssl    0:00 /usr/lib/gvfs-udisks2-volume-monitor
+    796 ?        Ssl    0:01 /usr/lib/xfce4/notifyd/xfce4-notifyd
+    816 ?        Sl     0:00 /usr/lib/pulse/gsettings-helper
+    834 ?        Sl     0:00 /usr/lib/dconf-service
+    837 ?        Sl     0:01 /usr/lib/xfce4/panel/wrapper-2.0 /usr/lib/xfce4/pan
+    838 ?        Sl     0:49 /usr/lib/xfce4/panel/wrapper-2.0 /usr/lib/xfce4/pan
+    839 ?        Sl     0:00 /usr/lib/xfce4/panel/wrapper-2.0 /usr/lib/xfce4/pan
+    840 ?        Sl     0:01 /usr/lib/xfce4/panel/wrapper-2.0 /usr/lib/xfce4/pan
+   5835 ?        Sl     2:20 xfwm4 --display :0.0 --sm-client-id 2bc0df4e4-72f5-
+   6580 ?        Sl     1:02 /usr/lib/firefox/firefox -contentproc -childID 15 -
+  14455 ?        Sl     0:03 xfce4-terminal
+  14461 pts/0    Ss     0:00 bash
+  15533 pts/0    R+     0:00 ps -x
+```
+
+* `-u` - Fornece o nome do usuário e a hora de início do processo. Exemplo:
+
+```console
+lucashe4rt@He4rt-PC:~$ ps -u
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+lucashe+   14461  0.0  0.0   4376  3804 pts/0    Ss   11:10   0:00 bash
+lucashe+   15676  0.0  0.0   5664  2848 pts/0    R+   11:32   0:00 ps -u
+```
+
+*Obs: podemos combinar as opções como `ps -aux` que exibe todos os processos do sistema independente de terminal.*
 
 > # kill
 
-> # ifconfig
+O comando `kill` serve para matarmos processos, ou seja, finalizar tarefas dentro do nosso sistema operacional. 
 
-> # exit
+Sintaxe:
 
+```console
+kill [opções] pid
+```
+
+Exemplo:
+
+```console
+lucashe4rt@He4rt-PC:~$ kill 962
+lucashe4rt@He4rt-PC:~$ 
+```
+*Acabei de finalizar o processo do discord no meu computador.*
+
+Algumas vertentes do comando `kill`:
+
+* `pkill` - Especificamos o nome do processo ou um padrão para encontrar o processo. Exemplo:
+
+```console
+lucashe4rt@He4rt-PC:~$ pkill firefox
+lucashe4rt@He4rt-PC:~$ 
+```
+
+ou 
+
+```console
+lucashe4rt@He4rt-PC:~$ pkill fire
+lucashe4rt@He4rt-PC:~$ 
+```
+
+*Obs: este comando pode encerrar o processo errado, principalmente se exitem vários processos com o mesmo nome.*
+
+* `killall` - Pode encerrar o processo pelo nome porém só funciona com o nome exato do processo e não com o nome parcial, assim, sendo mais seguro que o `pkill`.
+
+```console
+lucashe4rt@He4rt-PC:~$ killall Discord
+lucashe4rt@He4rt-PC:~$ 
+```
 ---
 ## Referencias:
 [Devmedia - comando importantes linux](https://www.devmedia.com.br/comandos-importantes-linux/23893)
 
-[vivaolinux - usando o comando df](https://www.vivaolinux.com.br/dica/Usando-o-comando-df)
+[Vivaolinux - usando o comando df](https://www.vivaolinux.com.br/dica/Usando-o-comando-df)
+
+[Hostinger - comando cat linux](https://www.hostinger.com.br/tutoriais/comando-cat-linux/)
+
+[Guia Linux - ps](http://guialinux.uniriotec.br/ps/)
