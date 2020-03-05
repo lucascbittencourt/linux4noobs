@@ -1,9 +1,13 @@
 # 03 - Navegação
 
 #### Conteúdo do artigo
-* [cd](#cd)
-* [Path Absoluto X Path Relativo](#path)
-* [pwd](#pwd)
+[cd](#cd)<br>
+[Path Absoluto X Path Relativo](#path)<br>
+[pwd](#pwd)<br>
+[Referências](#Referências)<br>
+[Autores](#Autores)
+
+---
 
 Os comandos de navegação via linha de comando são de extrema para usarmos o sistema pois é desta maneira que conseguimos transitar pela estrutura de diretórios do nosso sistema.
 
