@@ -22,8 +22,8 @@ Exemplo:
 lucashe4rt@He4rt-PC:~$ cd Desktop
 lucashe4rt@He4rt-PC:~/Desktop$ 
 
-lucashe4rt@He4rt-PC:~$ cd Documents/linux4noobs/
-lucashe4rt@He4rt-PC:~/Documents/linux4noobs$
+lucashe4rt@He4rt-PC:~$ cd /var/cache/
+lucashe4rt@He4rt-PC:/var/cache$
 ```
 Neste exemplo nós informamos um caminho relativo e um caminho absoluto, explicaremos mais para frente neste mesmo artigo a diferença de um para o outro.
 
