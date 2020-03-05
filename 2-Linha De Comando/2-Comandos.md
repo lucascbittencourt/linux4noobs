@@ -601,6 +601,6 @@ lucashe4rt@He4rt-PC:~$
 
 [Hostinger - comando kill linux](https://www.hostinger.com.br/tutoriais/comando-kill-linux/)
 
-# Autores
+## Autores
   * **Lucas Silva (LucasHe4rt)** - *Back-end Developer & Member of He4rt Developers* - [Twitter](https://twitter.com/lucashe4rt)
 
