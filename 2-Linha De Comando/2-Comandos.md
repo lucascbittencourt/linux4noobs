@@ -595,7 +595,7 @@ lucashe4rt@He4rt-PC:~$ clear
 ## Referencias:
 [Devmedia - comando importantes linux](https://www.devmedia.com.br/comandos-importantes-linux/23893)
 
-[Bóson Treinamentos - comando ls](https://www.youtube.com/watch?v=BIksX9l1Hvo) (vídeo)
+[Bóson Treinamentos - comando ls](https://www.youtube.com/watch?v=BIksX9l1Hvo) - Vídeo
 
 [Vivaolinux - usando o comando df](https://www.vivaolinux.com.br/dica/Usando-o-comando-df)
 
@@ -604,3 +604,6 @@ lucashe4rt@He4rt-PC:~$ clear
 [Guia Linux - ps](http://guialinux.uniriotec.br/ps/)
 
 [Hostinger - comando kill linux](https://www.hostinger.com.br/tutoriais/comando-kill-linux/)
+
+# Autores
+  * Lucas Silva (LucasHe4rt) - *Back-end Developer & Member of He4rt Developers* - [Twitter](https://twitter.com/lucashe4rt)
