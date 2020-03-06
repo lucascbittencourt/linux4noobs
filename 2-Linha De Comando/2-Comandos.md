@@ -1,5 +1,19 @@
 # 02 - Comandos básicos
 
+#### Contéudo do artigo
+Comandos:
+  * [cd](#cd)
+  * [ls](#ls)
+  * [df](#df)
+  * [cat](#cat)
+  * [ps](#ps)
+  * [kill](#kill)
+
+[Referências](#Referências)
+
+[Autores](#Autores)
+
+---
 > # cd
 
 O comando `cd` é um acrônimo para "change directory" e serve para navegar do diretório atual para outro especificado em seguida.
@@ -573,29 +587,11 @@ lucashe4rt@He4rt-PC:~$
 lucashe4rt@He4rt-PC:~$ killall Discord
 lucashe4rt@He4rt-PC:~$ 
 ```
-
-> # clear
-
-O comando `clear` serve para limparmos o conteúdo do terminal.
-
-Sintaxe:
-
-```console
-clear
-```
-
-Exemplo
-```console
-lucashe4rt@He4rt-PC:~$ clear
-```
-
-*Obs: podemos também apenas apertar `CTRL + L` e limparemos nosso terminal da mesma forma.*
-
 ---
-## Referencias:
+## Referências:
 [Devmedia - comando importantes linux](https://www.devmedia.com.br/comandos-importantes-linux/23893)
 
-[Bóson Treinamentos - comando ls](https://www.youtube.com/watch?v=BIksX9l1Hvo) (vídeo)
+[Bóson Treinamentos - comando ls](https://www.youtube.com/watch?v=BIksX9l1Hvo) - Vídeo
 
 [Vivaolinux - usando o comando df](https://www.vivaolinux.com.br/dica/Usando-o-comando-df)
 
@@ -604,3 +600,7 @@ lucashe4rt@He4rt-PC:~$ clear
 [Guia Linux - ps](http://guialinux.uniriotec.br/ps/)
 
 [Hostinger - comando kill linux](https://www.hostinger.com.br/tutoriais/comando-kill-linux/)
+
+## Autores
+  * **Lucas Silva (LucasHe4rt)** - *Back-end Developer & Member of He4rt Developers* - [Twitter](https://twitter.com/lucashe4rt)
+
