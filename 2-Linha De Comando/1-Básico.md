@@ -1,6 +1,6 @@
 # 02 - Básico
 
-#### Conteúdo do artigo
+## Conteúdo do artigo
 
 [Terminal](##Terminal)<br>
 [Console](##Console)<br>
@@ -16,7 +16,7 @@ Antes de entendermos o que é uma linha de comandos é importante nós entenderm
 
 ## Terminal
 
-O terminal é um amibente para entrada e saída de comandos, a palavra terminal também pode significar um dispositivo no qual podemos interagir com o computador, como por exemplo um teclado e monitor. No caso do terminal que estamos habituados ele é um software que emula os terminais tradicionais.
+O terminal é um ambiente para entrada e saída de comandos, a palavra terminal também pode significar um dispositivo no qual podemos interagir com o computador, como por exemplo um teclado e monitor. No caso do terminal que estamos habituados ele é um software que emula os terminais tradicionais.
 
 Exemplo de um terminal tradicional:
 
