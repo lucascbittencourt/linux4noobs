@@ -261,6 +261,13 @@ Resultado:
 lucashe4rt@He4rt-PC:/$
 ```
 
+Para limpar a tela é bem simples, basta pressionar as teclas `CTRL + L` ou digitar no próprio terminal:
+
+```console
+lucashe4rt@He4rt-PC:/$ clear
+```
+E pronto, agora nosso terminal esta limpo.
+
 > ### **/lib** - Bibliotecas essenciais
 
 Dentro deste diretório nos iremos encontrar bibliotecas
