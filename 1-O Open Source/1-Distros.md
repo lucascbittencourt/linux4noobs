@@ -26,7 +26,7 @@ A função de um Driver é diminuir a abstração no contexto de Hardware e Soft
 
 ## Ferramentas GNU
 
-As ferramentas GNU fazem parte de um conjunto feito pelo [Projeto GNU](https://pt.wikipedia.org/wiki/GNU), esse conjunto forma um sistema que é usado para desenvolver aplicações e sistemas operacionais. Essas ferramentas são; 
+As ferramentas GNU fazem parte de um conjunto feito pelo [Projeto GNU](https://pt.wikipedia.org/wiki/GNU), esse conjunto forma um sistema que é usado para desenvolver aplicações e sistemas operacionais. Essas ferramentas são:
 
 * GCC, um conjunto de compiladores de linguagens como; Java, C, Fortran e Pascal.
 
