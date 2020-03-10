@@ -623,7 +623,7 @@ lucashe4rt@He4rt-PC:~$ kill -9 13421
 lucashe4rt@He4rt-PC:~$
 ```
 
-Assim **forçamos** a parada do prograva de id *13421*
+Assim **forçamos** a parada do programa de id *13421*
 
 A diferença para do kill com e sem o modificador -9 é simples: sem o modificador, o comando solicita o fechamento do programa, dando uma chance para o programa se encerrar sozinho, com o modificador essa chance não existe, o processo é encerrado imediatamente. (Geralmente é usado quando um programa realmente trava de vez e não quer fechar)
 
