@@ -614,6 +614,19 @@ lucashe4rt@He4rt-PC:~$ killall Discord
 lucashe4rt@He4rt-PC:~$
 ```
 
+`Kill -9` e sua diferença entre o `kill` normal
+
+Muitas vezes não conseguimos matar o processo quando o programa trava e para termos certeza de que conseguiremos finalizá-lo, forçando a finalização, podemos usar o modificador -9 para o comando kill da seguinte forma:
+
+```console
+lucashe4rt@He4rt-PC:~$ kill -9 13421
+lucashe4rt@He4rt-PC:~$
+```
+
+Assim **forçamos** a parada do programa de id *13421*
+
+A diferença para do kill com e sem o modificador -9 é simples: sem o modificador, o comando solicita o fechamento do programa, dando uma chance para o programa se encerrar sozinho, com o modificador essa chance não existe, o processo é encerrado imediatamente. (Geralmente é usado quando um programa realmente trava de vez e não quer fechar)
+
 ---
 
 ## Referências
@@ -633,3 +646,6 @@ lucashe4rt@He4rt-PC:~$
 ## Autores
 
 * **Lucas Silva (LucasHe4rt)** - *Back-end Developer & Member of He4rt Developers* - [Twitter](https://twitter.com/lucashe4rt)
+
+
+* **Marco Antonio (Specko)** - *Back-end Developer & Member of He4rt Developers* - [Twitter](https://twitter.com/lolgamarco2)
