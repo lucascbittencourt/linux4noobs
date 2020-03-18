@@ -570,6 +570,19 @@ lucashe+   15676  0.0  0.0   5664  2848 pts/0    R+   11:32   0:00 ps -u
 
 *Obs: podemos combinar as opções como `ps -aux` que exibe todos os processos do sistema independente de terminal.*
 
+Filtrando processos
+
+Se estiver difícil de encontrar um processo, você pode utilizar o **ps** junto com o **grep**, utilizando o operador **pipe (|)**, onde você irá pegar a saida do comando *ps* e filtrar com o *grep*
+
+Como por exemplo quereremos encontar o processo do *firefox*, então usariamos:
+
+```console
+lucashe4rt@He4rt-PC:~$ ps aux| grep firefox
+    PID TTY          TIME CMD
+      6 ?        00:00:00 /usr/lib/firefox/firefox
+```
+
+
 > ## kill
 
 O comando `kill` serve para matarmos processos, ou seja, finalizar tarefas dentro do nosso sistema operacional.
