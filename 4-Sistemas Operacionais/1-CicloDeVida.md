@@ -17,7 +17,7 @@ O linux possibilita varias coisas que nem o Windows e nem o MacOS possibilitam, 
 * Desktop personalizado e pessoal
 * Liberdade para alterar o que quiser
 
-Na primeiro capitulo, citamos o fato de alguns aplicativos não estarem disponiveis para o Linux, o que também ajudou o Windows a se popularizar para ambientes dektop e coisas do tipo. Só que hoje em dia o cenario é completamente diferente, a maioria das aplicações são feitas para rodarem em nuvem, então você utilizar Linux ou Windows não vai mudar nada, já que tudo vai ser feito no seu Navegador. E é claro, o Linux também pode servir como um servidor web, um banco de dados e qualquer tipo de servidor.
+No primeiro capitulo, citamos o fato de alguns aplicativos não estarem disponiveis para o Linux, o que também ajudou o Windows a se popularizar para ambientes dektop e coisas do tipo. Só que hoje em dia o cenario é completamente diferente, a maioria das aplicações são feitas para rodarem em nuvem, então você utilizar Linux ou Windows não vai mudar nada, já que tudo vai ser feito no seu Navegador. E é claro, o Linux também pode servir como um servidor web, um banco de dados e qualquer tipo de servidor.
 
 ## GNU e CLI
 
