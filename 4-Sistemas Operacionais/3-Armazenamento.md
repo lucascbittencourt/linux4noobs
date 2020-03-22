@@ -58,5 +58,55 @@ cd ../
 cd /var/log
 ```
 
-Por ultimo vamos falar sobre log, o linux mantem um sistema de log, aonde se mantem informação sobre o que aconteceu e o que esta acontecendo na maquina. E é aqui aonde os logs do sistema moram, e aqui nos temos um arquivo especial chamado dmesg, que é aonde se tem as mensagens do Kernel, se você der um CAT nele vai ver todas as informações da maquina desde quando ela foi ligada 
+Por ultimo vamos falar sobre log, o linux mantem um sistema de log, aonde se mantem informação sobre o que aconteceu e o que esta acontecendo na maquina. E é aqui aonde os logs do sistema moram, e aqui nos temos um arquivo especial chamado dmesg, que é aonde se tem as mensagens do Kernel, se você der um CAT nele vai ver todas as informações da maquina desde quando ela foi ligada.
+
+# Processos
+
+## PID
+
+Agora vamos nos aprofundar mais nos processos do Linux, mas antes de falar dos comandos que lidam com esses processos precisamos falar sobre o PID(Process ID), cada processo vai receber um numero de identificação unico, o primeiro processo init/systemd sempre terá o PID1. Para os outros o numero é incrementado quando mais processos vão sendo executados
+
+## User ID e GroupID
+
+Um processo também sempre vai ter um UserID e um GroupID, os processos precisam ser executados com os privilégios de uma conta ou grpo associado a ele, isso é importante pois assim o sistema consegue determinar e gerenciar o acesso aos recursos. 
+
+## Processo Pai
+
+Todos processos menos o init/systemd são executados de forma recursiva, ou seja, possuem um processo pai que vai depender de outro processo e por ai vai. Caso o processo pai termine a execução antes do processo filho, o init/systemd vai "cuidar" do processo filho.
+
+## Sinais
+
+Os sinais são utilizados pelo Kernel, processos ou usuários, para avisar um determinado processo sobre algum evento particular. Eles funcionam como uma "interrupção de software", e com isso os processos tomam alguma ação de acordo com o sinal recebido.
+
+# Comandos 
+
+## PS
+
+```shell
+ps
+```
+Esse comando vai mostrar os processos que estão em execução, pelo seu usario ou terminal.
+
+Se você usar o parametro a, ele vai mostrar todos os processos que estão ou não ligados a o seu suario ou ao terminal.
+
+```shell
+ps a
+```
+
+Agora, se você usar o parametro au, ele vai mostrar bem mais informações sobre os processos, mas ainda ligados ao seu usuario.
+
+```shell
+ps au
+```
+
+Por ultimo, nos podemos usar o parametro aux, para mostrar todos os processos de todos os usuarios e terminais. 
+
+```shell
+ps aux
+```
+
+
+
+
+
 
