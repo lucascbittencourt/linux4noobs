@@ -29,20 +29,20 @@
   4.  [Criar, mover e excluir](/2-Linha%20De%20Comando/4-Mover.md)
   
 ## Linha De Comando Avançado
-  1.  Arquivamento de Arquivos
-  2.  Extrair dados de Arquivos
-  3.  Scripts Simples
+  1.  [Arquivamento de Arquivos](/3-Linha%20De%20Comando%20Avançado/1-Arquivamento.md)
+  2.  [Extrair dados de Arquivos](/3-Linha%20De%20Comando%20Avançado/2-Dados.md)
+  3.  [Scripts Simples](/3-Linha%20De%20Comando%20Avançado/3-ScriptsSimples.md)
   
 ## Sistemas Operacionais
   1. [Gerenciamento de ciclo de vida de uma Distribuição](/4-Sistemas%20Operacionais/1-CicloDeVida.md)
-  2. Componentes de um computador desktop
-  3. Armazenamento 
-  4. Redes
+  2. [Componentes de um computador desktop](/4-Sistemas%20Operacionais/2-ComponentesDeUmComputador.md)
+  3. [Armazenamento](/4-Sistemas%20Operacionais/3-Armazenamento.md)
+  4. [Redes](/4-Sistemas%20Operacionais/4-Redes.md)
   
 ## Segurança
   1. [Usuários](/5-Segurança/1-Usuários.md)
   2. [Criação de usuários e grupos](/5-Segurança/2-Grupos.md)
   3. [Manipulação de permissões](/5-Segurança/3-Manipulação.md)
-  4. Permissões especiais
+  4. [Permissões especiais](/5-Segurança/4-Permissões.md)
   
   <p align="center">Made with 💜</p>
