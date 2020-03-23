@@ -77,3 +77,4 @@ DNS: É um sistema hierárquico e distribuído de gestão de nomes para computad
 <hr />
 
 Isso é o basico que você precisa pelo menos conhecer sobr redes, se quer aprender mais recomendo o canal [Certificação Linux](https://www.youtube.com/user/ueribeiro/videos111111111)
+

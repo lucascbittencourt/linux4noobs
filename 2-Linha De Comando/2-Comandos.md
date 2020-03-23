@@ -1,6 +1,19 @@
 # 02 - Comandos básicos
 
-> # cd
+## Contéudo do artigo
+
+[cd](#cd)<br>
+[ls](#ls)<br>
+[df](#df)<br>
+[cat](#cat)<br>
+[ps](#ps)<br>
+[kill](#kill)<br>
+[Referências](#Referências)<br>
+[Autores](#Autores)
+
+---
+
+> ## cd
 
 O comando `cd` é um acrônimo para "change directory" e serve para navegar do diretório atual para outro especificado em seguida.
 
@@ -13,10 +26,10 @@ cd [diretório]
 Exemplo:
 
 ```console
-lucashe4rt@He4rt:~$ cd / 
+lucashe4rt@He4rt:~$ cd /
 ```
 
-* O caractér `/` identifica o diretório raiz do nosso sistema de arquivos.
+* O caractere `/` identifica o diretório raiz do nosso sistema de arquivos.
 
 Resultado:
 
@@ -24,7 +37,7 @@ Resultado:
 lucashe4rt@He4rt:/$
 ```
 
-> # ls
+> ## ls
 
 Com o comando `ls` podemos visualizar o conteúdo de um diretório e também informações sobre arquivos, informando dados como nomes de arquivos, permissões, proprietários e datas de criação, além de inúmeras opções para exibir as informações de diversas formas.
 
@@ -46,7 +59,7 @@ lucashe4rt@He4rt:~$ ls -a
 .PhpStorm2019.3  .eclipse    .mysql_history      .wget-hsts  Images
 .Xauthority      .gitconfig  .node_repl_history  .wine32     aur
 .backgrounds     .gitkraken  .npm                .yarn       go
-.bash_history    .gnome      .pki                .yarnrc     
+.bash_history    .gnome      .pki                .yarnrc
 .bash_logout     .gnupg      .pulse-cookie       Desktop
 .bash_profile    .icons      .swt                Documents
 ```
@@ -59,7 +72,7 @@ lucashe4rt@He4rt:~$ ls -A
 .PhpStorm2019.3  .eclipse    .mysql_history      .wget-hsts  Images
 .Xauthority      .gitconfig  .node_repl_history  .wine32     aur
 .backgrounds     .gitkraken  .npm                .yarn       go
-.bash_history    .gnome      .pki                .yarnrc     
+.bash_history    .gnome      .pki                .yarnrc
 .bash_logout     .gnupg      .pulse-cookie       Desktop
 .bash_profile    .icons      .swt                Documents
 .bashrc          .java       .themes             Downloads
@@ -68,13 +81,14 @@ lucashe4rt@He4rt:~$ ls -A
 
 * `-i` - Mostra o número do inode de cada arquivo na primeira coluna. Exemplo:
 
-```console 
+```console
 1195906 Desktop     660779 Games        396790 aur
 1319602 Documents  2630465 Games-Wine  2890994 go
-1200375 Downloads  1314860 Images      
+1200375 Downloads  1314860 Images
 ```
 
 * `-l` - Formato longo, mostra permissões, número de links, propietário, grupo, tamanho, data de modificação e nome do arquivo. Exemplo:
+
 ```console
 lucashe4rt@He4rt:~$ ls -l
 total 1032
@@ -89,6 +103,7 @@ drwxr-xr-x  3 lucashe4rt lucashe4rt    4096 Feb 29 16:37 go
 ```
 
 * `-m` - Arquivos listados em sequência, separados por vírgula. Exemplo:
+
 ```console
 lucashe4rt@He4rt:~$ ls -m
 Desktop, Documents, Downloads, Games, Games-Wine, Images, aur, go
@@ -110,6 +125,7 @@ drwxr-xr-x  3 1000 1000 4096 Feb 29 16:37 go
 ```
 
 * `-o` - Semelhante ao `-l`, porém não mostra o grupo do arquivo. Exemplo:
+
 ```console
 total 36
 drwxrwxr-x  2 lucashe4rt 4096 Feb 23 11:57 Desktop
@@ -121,13 +137,16 @@ drwxr-xr-x  3 lucashe4rt 4096 Feb 27 22:38 Images
 drwxr-xr-x  3 lucashe4rt 4096 Feb 23 11:20 aur
 drwxr-xr-x  3 lucashe4rt 4096 Feb 29 16:37 go
 ```
+
 * `-p` - Mostra uma barra(/) na frente de nomes de diretórios. Exemplo:
 
 ```console
 lucashe4rt@He4rt:~$ ls -p
 Desktop/  Documents/  Downloads/  Games/  Games-Wine/  Images/  aur/  go/
 ```
+
 * `-r` - Ordem reversa. Exemplo:
+
 ```console
 lucashe4rt@He4rt:~$ ls -r
 go  aur  Images  Games-Wine  Games  Downloads  Documents  Desktop
@@ -135,7 +154,7 @@ go  aur  Images  Games-Wine  Games  Downloads  Documents  Desktop
 
 *Nós também podemos juntar os comandos, por exemplo `ls -la`*.
 
-> # df
+> ## df
 
 O comando `df` mostra o espaço livre/ocupado de cada partição. Pode ser utilizado junto com várias opções, se for utilizado sozinho, mostrará o espaço usado e disponível de todos os sistemas de arquivos atualmente montados.
 
@@ -146,6 +165,7 @@ df [opções]
 ```
 
 Exemplo:
+
 ```console
 lucashe4rt@He4rt:~$ df
 Filesystem     1K-blocks     Used Available Use% Mounted on
@@ -157,9 +177,11 @@ tmpfs            4036824        0   4036824   0% /sys/fs/cgroup
 tmpfs            4036824        4   4036820   1% /tmp
 tmpfs             807364       12    807352   1% /run/user/1001
 ```
+
 Algumas opções do  `df`:
 
 * `-a` - Inclui sistema de arquivos com 0 (zero) blocos. Exemplo:
+
 ```console
 lucashe4rt@He4rt:~$ df -a
 Filesystem     1K-blocks     Used Available Use% Mounted on
@@ -195,6 +217,7 @@ configfs               0        0         0    - /sys/kernel/config
 tmpfs            4036824        4   4036820   1% /tmp
 tmpfs             807364       12    807352   1% /run/user/1001
 ```
+
 * `-h` - Mostra o espaço livre/ocupado em MB, KB, GB em vez de bloco. Exemplo:
 
 ```console
@@ -208,7 +231,9 @@ tmpfs           3.9G     0  3.9G   0% /sys/fs/cgroup
 tmpfs           3.9G  4.0K  3.9G   1% /tmp
 tmpfs           789M   12K  789M   1% /run/user/1001
 ```
+
 * `-k` - Lista em Kbyts. Exemplo:
+
 ```console
 lucashe4rt@He4rt:~$ df -k
 Filesystem     1K-blocks     Used Available Use% Mounted on
@@ -222,6 +247,7 @@ tmpfs             807364       12    807352   1% /run/user/1001
 ```
 
 * `-l` - Somente lista sistema de arquivos locais. Exemplo:
+
 ```console
 lucashe4rt@He4rt:~$ df -l
 Filesystem     1K-blocks     Used Available Use% Mounted on
@@ -235,6 +261,7 @@ tmpfs             807364       12    807352   1% /run/user/1001
 ```
 
 * `-m` - Lista em Mbytes. Exemplo:
+
 ```console
 lucashe4rt@He4rt:~$ df -m
 Filesystem     1M-blocks  Used Available Use% Mounted on
@@ -248,6 +275,7 @@ tmpfs                789     1       789   1% /run/user/1001
 ```
 
 * `-T` - Lista o tipo de sistema de arquivos de cada partição. Exemplo:
+
 ```console
 lucashe4rt@He4rt:~$ df -T 
 Filesystem     Type     1K-blocks     Used Available Use% Mounted on
@@ -259,7 +287,8 @@ tmpfs          tmpfs      4036824        0   4036824   0% /sys/fs/cgroup
 tmpfs          tmpfs      4036824      116   4036708   1% /tmp
 tmpfs          tmpfs       807364       12    807352   1% /run/user/1001
 ```
-> # cat
+
+> ## cat
 
 O comando `cat`, derivação da palavra concatenate, permite que a gente crie, una e exiba arquivos no formato padrão de tela ou em outro arquivo, entre outras funcionalidades.
 
@@ -268,6 +297,7 @@ Sintaxe:
 ```console
 cat [opção] [arquivo]
 ```
+
 Exemplo:
 
 ```console
@@ -276,6 +306,7 @@ da estrela ai se vc ta curtindo
 manda pros amigo tb
 vc é d+++
 ```
+
 Algumas opções do comando `cat`:
 
 * `-E` - Marca o término de linha mostrando o caractere __$__ ao final de cada uma delas. Exemplo:
@@ -288,6 +319,7 @@ vc é d+++$
 ```
 
 * `-n` - Mostra a quantidade de linas do arquivo. Exemplo:
+
 ```console
 lucashe4rt@He4rt-PC:~$ cat -n arquivo.txt 
      1	da estrela ai se vc ta curtindo
@@ -296,16 +328,18 @@ lucashe4rt@He4rt-PC:~$ cat -n arquivo.txt
 ```
 
 * `-v` - Exibe caracteres não exibíveis. Exemplo:
+
 ```console
-lucashe4rt@He4rt-PC:~$ cat -v arquivo.txt 
+lucashe4rt@He4rt-PC:~$ cat -v arquivo.txt
 da estrela ai se vc ta curtindo
 manda pros amigo tb
 vc M-CM-) d+++
 ```
 
 * `-T` - Exibe tabulação mostradas como __^I__. Exemplo:
+
 ```console
-lucashe4rt@He4rt-PC:~$ cat -T arquivo.txt 
+lucashe4rt@He4rt-PC:~$ cat -T arquivo.txt
 da estrela ai se vc ta curtindo
 manda pros amigo tb
 vc é d+++
@@ -314,20 +348,21 @@ vc é d+++
 
 
 ^ISegue o melhor grupo de desenvolvimento lá
-^Ino 
+^Ino
 ^I
 ^Itwitter: @He4rtDevs
 ```
 
 * `-s` - Remove linhas repetidas em branco. Exemplo:
+
 ```console
-lucashe4rt@He4rt-PC:~$ cat -s arquivo.txt 
+lucashe4rt@He4rt-PC:~$ cat -s arquivo.txt
 da estrela ai se vc ta curtindo
 manda pros amigo tb
 vc é d+++
 
 	Segue o melhor grupo de desenvolvimento lá
-	no 
+	no
 	
 	twitter: @He4rtDevs
 ```
@@ -335,6 +370,7 @@ vc é d+++
 *Obs: essa opção mantém uma linha vazia e remove as linhas repetidas em branco.*
 
 * `-b` - Numera as linhas que possuem algum conteúdo. Exemplo:
+
 ```console
 lucashe4rt@He4rt-PC:~$ cat -b arquivo.txt 
      1	da estrela ai se vc ta curtindo
@@ -349,6 +385,7 @@ lucashe4rt@He4rt-PC:~$ cat -b arquivo.txt
      6		
      7		twitter: @He4rtDevs
 ```
+
 *Obs: essa opção sobrescreve a opção `-n`.*
 
 * `tac` - Exibe o conteúdo do arquivo em ordem contrária, da primeira à ultima linha. Exemplo:
@@ -356,7 +393,7 @@ lucashe4rt@He4rt-PC:~$ cat -b arquivo.txt
 ```console
 twitter: @He4rtDevs
 	
-	no 
+	no
 	Segue o melhor grupo de desenvolvimento lá
 
 
@@ -367,11 +404,11 @@ manda pros amigo tb
 da estrela ai se vc ta curtindo
 ```
 
-> # ps
+> ## ps
 
 O comando `ps` exibe informações sobre os processos que estão executando na máquina.
 
-Sintaxe: 
+Sintaxe:
 
 ```console
 ps [opções]
@@ -389,6 +426,7 @@ lucashe4rt@He4rt-PC:~$ ps
 Algumas opções do comando `ps`:
 
 * `-a` - Mostra os processos de todos os usuários. Exemplo:
+
 ```console
 lucashe4rt@He4rt-PC:~$ ps -a
     PID TTY          TIME CMD
@@ -426,6 +464,7 @@ lucashe4rt@He4rt-PC:~$ ps -e
   14461 pts/0    00:00:00 bash
   14721 pts/0    00:00:00 ps
 ```
+
 *obs: eu removi alguns processos para o exemplo não tomar um espaço muito grande na tela.*
 
 * `-f` - Mostra a árvore de execução de comandos. Exemplo:
@@ -437,7 +476,7 @@ lucashe+   14461   14455  0 11:10 pts/0    00:00:00 bash
 lucashe+   14959   14461  0 11:17 pts/0    00:00:00 ps -f
 ```
 
-* `-g [grupo]` - Mostra os processos de um determinado grupo. Exemplo: 
+* `-g [grupo]` - Mostra os processos de um determinado grupo. Exemplo:
 
 ```console
 lucashe4rt@He4rt-PC:~$ ps -g lucashe4rt
@@ -531,9 +570,22 @@ lucashe+   15676  0.0  0.0   5664  2848 pts/0    R+   11:32   0:00 ps -u
 
 *Obs: podemos combinar as opções como `ps -aux` que exibe todos os processos do sistema independente de terminal.*
 
-> # kill
+Filtrando processos
 
-O comando `kill` serve para matarmos processos, ou seja, finalizar tarefas dentro do nosso sistema operacional. 
+Se estiver difícil de encontrar um processo, você pode utilizar o **ps** junto com o **grep**, utilizando o operador **pipe (|)**, onde você irá pegar a saida do comando *ps* e filtrar com o *grep*
+
+Como por exemplo quereremos encontar o processo do *firefox*, então usariamos:
+
+```console
+lucashe4rt@He4rt-PC:~$ ps aux| grep firefox
+    PID TTY          TIME CMD
+      6 ?        00:00:00 /usr/lib/firefox/firefox
+```
+
+
+> ## kill
+
+O comando `kill` serve para matarmos processos, ou seja, finalizar tarefas dentro do nosso sistema operacional.
 
 Sintaxe:
 
@@ -545,8 +597,9 @@ Exemplo:
 
 ```console
 lucashe4rt@He4rt-PC:~$ kill 962
-lucashe4rt@He4rt-PC:~$ 
+lucashe4rt@He4rt-PC:~$
 ```
+
 *Acabei de finalizar o processo do discord no meu computador.*
 
 Algumas vertentes do comando `kill`:
@@ -555,14 +608,14 @@ Algumas vertentes do comando `kill`:
 
 ```console
 lucashe4rt@He4rt-PC:~$ pkill firefox
-lucashe4rt@He4rt-PC:~$ 
+lucashe4rt@He4rt-PC:~$
 ```
 
-ou 
+ou
 
 ```console
 lucashe4rt@He4rt-PC:~$ pkill fire
-lucashe4rt@He4rt-PC:~$ 
+lucashe4rt@He4rt-PC:~$
 ```
 
 *Obs: este comando pode encerrar o processo errado, principalmente se exitem vários processos com o mesmo nome.*
@@ -571,31 +624,29 @@ lucashe4rt@He4rt-PC:~$
 
 ```console
 lucashe4rt@He4rt-PC:~$ killall Discord
-lucashe4rt@He4rt-PC:~$ 
+lucashe4rt@He4rt-PC:~$
 ```
 
-> # clear
+`Kill -9` e sua diferença entre o `kill` normal
 
-O comando `clear` serve para limparmos o conteúdo do terminal.
-
-Sintaxe:
+Muitas vezes não conseguimos matar o processo quando o programa trava e para termos certeza de que conseguiremos finalizá-lo, forçando a finalização, podemos usar o modificador -9 para o comando kill da seguinte forma:
 
 ```console
-clear
+lucashe4rt@He4rt-PC:~$ kill -9 13421
+lucashe4rt@He4rt-PC:~$
 ```
 
-Exemplo
-```console
-lucashe4rt@He4rt-PC:~$ clear
-```
+Assim **forçamos** a parada do programa de id *13421*
 
-*Obs: podemos também apenas apertar `CTRL + L` e limparemos nosso terminal da mesma forma.*
+A diferença para do kill com e sem o modificador -9 é simples: sem o modificador, o comando solicita o fechamento do programa, dando uma chance para o programa se encerrar sozinho, com o modificador essa chance não existe, o processo é encerrado imediatamente. (Geralmente é usado quando um programa realmente trava de vez e não quer fechar)
 
 ---
-## Referencias:
+
+## Referências
+
 [Devmedia - comando importantes linux](https://www.devmedia.com.br/comandos-importantes-linux/23893)
 
-[Bóson Treinamentos - comando ls](https://www.youtube.com/watch?v=BIksX9l1Hvo) (vídeo)
+[Bóson Treinamentos - comando ls](https://www.youtube.com/watch?v=BIksX9l1Hvo) - Vídeo
 
 [Vivaolinux - usando o comando df](https://www.vivaolinux.com.br/dica/Usando-o-comando-df)
 
@@ -604,3 +655,10 @@ lucashe4rt@He4rt-PC:~$ clear
 [Guia Linux - ps](http://guialinux.uniriotec.br/ps/)
 
 [Hostinger - comando kill linux](https://www.hostinger.com.br/tutoriais/comando-kill-linux/)
+
+## Autores
+
+* **Lucas Silva (LucasHe4rt)** - *Back-end Developer & Member of He4rt Developers* - [Twitter](https://twitter.com/lucashe4rt)
+
+
+* **Marco Antonio (Specko)** - *Back-end Developer & Member of He4rt Developers* - [Twitter](https://twitter.com/lolgamarco2)
