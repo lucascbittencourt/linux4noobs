@@ -35,7 +35,7 @@ A placa mãe é aonde você vai encaixar praticamente todos os componentes do se
 dmidecode |less
 ```
 
-Aqui você vai ter todas as informações da BIOS, que é um programa inicial que é gravado em um chip que fica na mãe e vai dar a carga inicial no computador e conferir todos os dispositivos conectados, e a BIOS depois passa o controle do computador para o gerenciador de boot, que vai carregar o sistema operacional, no nosso caso o KERNEL do Linux. Nos temos também a informação do DNI da placa, que é como ela trabalh acom a questão de todos os perifericos, e as informações de todos os slots, voltagens, caches que se tem em cada entrada PCI da sua Placa Mãe. 
+Aqui você vai ter todas as informações da BIOS, que é um programa inicial que é gravado em um chip que fica na mãe e vai dar a carga inicial no computador e conferir todos os dispositivos conectados, e a BIOS depois passa o controle do computador para o gerenciador de boot, que vai carregar o sistema operacional, no nosso caso o KERNEL do Linux. Nos temos também a informação do DNI da placa, que é como ela trabalha com a questão de todos os perifericos, e as informações de todos os slots, voltagens, caches que se tem em cada entrada PCI da sua Placa Mãe. 
 
 ## Fonte
 
