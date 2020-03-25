@@ -46,3 +46,13 @@
   4. [Permissões especiais](/5-Segurança/4-Permissões.md)
   
   <p align="center">Made with 💜</p>
+
+---
+
+## Autores
+
+* **Francisco Paradella (Happy)** -  *Developer & Member of He4rt Developers* - [Twitter](https://twitter.com/Pr1nceJS)
+
+* **Lucas Silva (LucasHe4rt)** - *Back-end Developer & Member of He4rt Developers* - [Twitter](https://twitter.com/lucashe4rt)
+
+* **Marco Antonio (Specko)** - *Back-end Developer & Member of He4rt Developers* - [Twitter](https://twitter.com/lolgamarco2)
