@@ -17,7 +17,7 @@ O uso de gerenciadores de janelas podem variar de ano para ano, já que as distr
 
 ## KDE
 
-O KDE também é bem antigo, ele usa o framework QT que é um pouco mais pesado que o Gnome(nada que 4g de ram não resolvam também), hoje em dia eles usam o Plasma, que é uma area de trabalho muito responsiva, e que consegue se adequar a qualquer tipo de tamanho de tela. As principais distribuições que usam o KDE são:
+O KDE também é bem antigo, ele usa o framework QT que é um pouco mais pesado que o Gnome(nada que 4GB de ram não resolvam também), hoje em dia eles usam o Plasma, que é uma area de trabalho muito responsiva, e que consegue se adequar a qualquer tipo de tamanho de tela. As principais distribuições que usam o KDE são:
 
 * OpenSuse
 * Gentoo
