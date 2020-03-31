@@ -19,9 +19,9 @@ O linux possibilita varias coisas que nem o Windows e nem o MacOS possibilitam, 
 
 No primeiro capitulo, citamos o fato de alguns aplicativos não estarem disponiveis para o Linux, o que também ajudou o Windows a se popularizar para ambientes dektop e coisas do tipo. Só que hoje em dia o cenario é completamente diferente, a maioria das aplicações são feitas para rodarem em nuvem, então você utilizar Linux ou Windows não vai mudar nada, já que tudo vai ser feito no seu Navegador. E é claro, o Linux também pode servir como um servidor web, um banco de dados e qualquer tipo de servidor.
 
-## GNU e CLI
+## GUI e CLI
 
-Quando estamos comparando os Sistemas Operacionais, também é importante falar sobre a Grafic User Interface e Command Line Interface, a Microsoft sempre foi forte com a sua GNU, enquanto a CLI só começou a ganhar forma nos ultimos anos. A GNU da Microsoft até o Windows10 foi o DOS, e atualmente colocaram o PowerShell, aonde é possivel rodar o Windows sem a GNU, apenas com a CLI. Já o Mac sempre manteve muito o seu foco em GNU, aonde tem a melhor do mercado a muito tempo, por outro lado não é possivel rodar o sistema apena pela CLI. E claro, no nosso pinguim é possivelmente alternar sempre o que você quer usar!! Seja GNU ou CLI.
+Quando estamos comparando os Sistemas Operacionais, também é importante falar sobre a Grafic User Interface e Command Line Interface, a Microsoft sempre foi forte com a sua GUI, enquanto a CLI só começou a ganhar forma nos ultimos anos. A GUI da Microsoft até o Windows10 foi o DOS, e atualmente colocaram o PowerShell, aonde é possivel rodar o Windows sem a GUI, apenas com a CLI. Já o Mac sempre manteve muito o seu foco em GUI, aonde tem a melhor do mercado a muito tempo, por outro lado não é possivel rodar o sistema apena pela CLI. E claro, no nosso pinguim é possivelmente alternar sempre o que você quer usar!! Seja GUI ou CLI.
 
 ## Ciclo De Manutenção
 
