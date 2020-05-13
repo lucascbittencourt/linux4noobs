@@ -4,7 +4,7 @@ Agora vamos falar um pouco sobre as diferenças entre os sistemas operacionais.
 
 ## Windows
 
-A primeira pergunta a ser respondida é porque o Windows é largamente utilizado. O principal foco disso seria o Software Proprietario, a maioria das empresas que possui um software de gestão, finança, estoque ou coisa do tipo, possuem um software bem antigo que foi criado há muito tempo usando as ferramentas da Microsoft e então só roda no windows, e o segundo ponto disso seria que quando você compra um computador em uma loja ou coisa do tipo, o Windows já vem embutido nele com uma licença com preço bem mais baixo. 
+A primeira pergunta a ser respondida é porque o Windows é largamente utilizado. O principal foco disso seria o Software Proprietário, a maioria das empresas que possui um software de gestão, finança, estoque ou coisa do tipo, possuem um software bem antigo que foi criado há muito tempo usando as ferramentas da Microsoft e então só roda no windows, e o segundo ponto disso seria que quando você compra um computador em uma loja ou coisa do tipo, o Windows já vem embutido nele com uma licença com preço bem mais baixo. 
 
 ## MacOS
 
