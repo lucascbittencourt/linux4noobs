@@ -52,7 +52,7 @@ O comando if serve para executar algo SE determinada condição for satisfeita. 
 * -o Se o usuário for o dono do arquivo
 * -r Se o arquivo pode ser lido
 * -w Se o arquivo pode ser alterado
-* -x Se o arquico pode ser executado
+* -x Se o arquivo pode ser executado
 
 ## for
 
