@@ -85,7 +85,7 @@ Os sinais são utilizados pelo Kernel, processos ou usuários, para avisar um de
 ```shell
 ps
 ```
-Esse comando vai mostrar os processos que estão em execução, pelo seu usario ou terminal.
+Esse comando vai mostrar os processos que estão em execução, pelo seu usuário ou terminal.
 
 Se você usar o parametro a, ele vai mostrar todos os processos que estão ou não ligados a o seu usuario ou ao terminal.
 
@@ -93,13 +93,13 @@ Se você usar o parametro a, ele vai mostrar todos os processos que estão ou n�
 ps a
 ```
 
-Agora, se você usar o parametro au, ele vai mostrar bem mais informações sobre os processos, mas ainda ligados ao seu usuario.
+Agora, se você usar o parametro au, ele vai mostrar bem mais informações sobre os processos, mas ainda ligados ao seu usuário.
 
 ```shell
 ps au
 ```
 
-Por ultimo, nos podemos usar o parametro aux, para mostrar todos os processos de todos os usuarios e terminais. 
+Por ultimo, nos podemos usar o parametro aux, para mostrar todos os processos de todos os usuários e terminais. 
 
 ```shell
 ps aux
