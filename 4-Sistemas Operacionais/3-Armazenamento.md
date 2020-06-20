@@ -87,7 +87,7 @@ ps
 ```
 Esse comando vai mostrar os processos que estão em execução, pelo seu usario ou terminal.
 
-Se você usar o parametro a, ele vai mostrar todos os processos que estão ou não ligados a o seu suario ou ao terminal.
+Se você usar o parametro a, ele vai mostrar todos os processos que estão ou não ligados a o seu usuario ou ao terminal.
 
 ```shell
 ps a
