@@ -14,7 +14,7 @@ Só para lembrar, coisas como um ambiente Desktop não precisam estar presente e
 
 ## Kernel
 
-O Kernel é a central do Sistemas Operacionais da maior parte dos computadores, ele é como se fosse uma ponte que faz a ligação entre os seus aplicativos e o processamento feito no nível de Hardware. As responsabilidades mais básicas do Kernel são; Gerenciamento De Processos, Gerenciamento De Memoria, Gerenciamento De Dispositivos e Chamadas Do Sistema.
+O Kernel é a central do Sistema Operacional da maior parte dos computadores, ele é como se fosse uma ponte que faz a ligação entre os seus aplicativos e o processamento feito no nível de Hardware. As responsabilidades mais básicas do Kernel são; Gerenciamento De Processos, Gerenciamento De Memoria, Gerenciamento De Dispositivos e Chamadas Do Sistema.
 
 ## Gerenciador De Pacotes
 
@@ -40,7 +40,7 @@ As ferramentas GNU fazem parte de um conjunto feito pelo [Projeto GNU](https://p
 
 ## Shell 
 
-O Shell Do Unix é um interpretador de linha de comando(melhor explicado na proxima parte). O usuário indica a operação do computador pela entrada de comandos parao Shell executar ou então cria scripts de texto ou coisa parecida. Agora no começo não precisa se preocupar muito com isso, mas se você quer dar ao seu terminal uma cara mais bonita vou deixar algumas recomendações abaixo.
+O Shell Do Unix é um interpretador de linha de comando(melhor explicado na proxima parte). O usuário indica a operação do computador pela entrada de comandos para o Shell executar ou então cria scripts de texto ou coisa parecida. Agora no começo não precisa se preocupar muito com isso, mas se você quer dar ao seu terminal uma cara mais bonita vou deixar algumas recomendações abaixo.
 
 * ZSH - Oh My Zsh
 * Fish - Oh My Fish
