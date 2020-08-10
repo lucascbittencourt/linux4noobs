@@ -28,7 +28,7 @@ Vai definir os endereços de rede dos dispositivos ligados a essa rede e a forma
 
 ## Transporte
 
-Aqui trabalham os protocolos de transporte das informações, que é responsavel por como os pacotes são enviados de um remetente para um destinatario. O TCPIP tem dois protocolos de transporte, o TCP e o DP. 
+Aqui trabalham os protocolos de transporte das informações, que é responsavel por como os pacotes são enviados de um remetente para um destinatário. O TCP/IP tem dois protocolos de transporte, o TCP e o UDP. 
 
 ## Aplicação
 
