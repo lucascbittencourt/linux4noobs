@@ -1,6 +1,6 @@
 # Tecnologias Da Informação e Comunicação(Tic)
 
-Diferente do que muitas pessoas pensam, até esse ponto você já deve saber que o Linux apesar de ser muito bom para servidores não é usado apenas para isso, já que também pode ser um desktop muito poderoso e com diversas opções de uso. Agroa vamos vamos um pouco mais sobre as famosas Switchs de programas, começando pelo querido Gnome.
+Diferente do que muitas pessoas pensam, até esse ponto você já deve saber que o Linux apesar de ser muito bom para servidores não é usado apenas para isso, já que também pode ser um desktop muito poderoso e com diversas opções de uso. Agora vamos falar um pouco mais sobre as famosas Switchs de programas, começando pelo querido Gnome.
 
 ## Gnome
 
