@@ -18,7 +18,7 @@ O Kernel é a central do Sistema Operacional da maior parte dos computadores, el
 
 ## Gerenciador De Pacotes
 
-Resumidamente um gerenciador de pacotes são feramentas que automatizam o processo de instalação, atualização e remoção de aplicativos de um Sistema Operacional. Suas principais funções são; Verificar checksums, Verificar a assinatura digital e Gerir as dependências para ter certeza de que um pacote vai ter todas as suas dependências necessárias já que instalar um aplicativo funciona de maneira [recursiva](https://pt.wikipedia.org/wiki/Recursividade_(ci%C3%AAncia_da_computa%C3%A7%C3%A3o)). Alguns famosos que podemos citar são o Apt, o Yay e o DNF.
+Resumidamente um gerenciador de pacotes são feramentas que automatizam o processo de instalação, atualização e remoção de aplicativos de um Sistema Operacional. Suas principais funções são; Verificar checksums, Verificar a assinatura digital e Gerir as dependências para ter certeza de que um pacote vai ter todas as suas dependências necessárias já que instalar um aplicativo funciona de maneira [recursiva](https://pt.wikipedia.org/wiki/Recursividade_(ci%C3%AAncia_da_computa%C3%A7%C3%A3o)). Alguns famosos que podemos citar são o Apt, o pacman e o DNF.
 
 ## Drivers
 
@@ -37,6 +37,8 @@ As ferramentas GNU fazem parte de um conjunto feito pelo [Projeto GNU](https://p
 * GNU Debugger, mais conhecido por GDB, é um depurador de GNU.
 
 * GNU Autoconf, é uma ferramenta para a produção de scripts shell.
+
+* GNU CoreUtils, ferramentas básicas do SO como cat, rm e ls
 
 ## Shell 
 
