@@ -166,6 +166,8 @@ Podemos observar que, assim como no arquivo passwd, esta linha contém vários c
 * **985** - número exclusivo de identificação do grupo;
 * **lucashe4rt** - lista dos nomes dos usuários que pertecem ao grupo.
 
+
+[Próximo](./2-Grupos.md)
 ---
 
 ## Referências

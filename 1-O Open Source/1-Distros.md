@@ -47,4 +47,4 @@ O Shell Do Unix é um interpretador de linha de comando(melhor explicado na prox
 * ZSH - Oh My Zsh
 * Fish - Oh My Fish
 
-
+[Próximo](./2-Aplicativos.md)

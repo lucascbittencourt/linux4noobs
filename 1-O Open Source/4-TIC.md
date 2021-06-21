@@ -50,3 +50,6 @@ Agora nos temos o XFCE, que é um dos mais leves e rapidos, geralmente usado em 
 ### Linux mint com XFCE
 
 ![MINT](https://linuxmint-installation-guide.readthedocs.io/pt_BR/latest/_images/cinnamon.png)
+
+
+[Proximo](../2-LinhaDeComando/1-Básico.md)

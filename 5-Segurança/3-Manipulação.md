@@ -157,6 +157,7 @@ lucashe4rt@He4rt-PC:~$ ls -l
 -rwx-----x  1 root       root               0 Mar 17 21:57 arquivo.txt
 ```
 
+[Próximo](./4-Permissões.md)
 ---
 
 ## Referências

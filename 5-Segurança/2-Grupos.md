@@ -188,6 +188,7 @@ lucashe4rt@He4rt-PC:~$ sudo groupdel noobs
 
 *Obs: Não se deve remover o grupo primário de um grupo de usuários existentes. Deve-se antes remover os usuários, para então remover o grupo.*
 
+[Próximo](./3-Manipulação.md)
 ---
 
 ## Referências
