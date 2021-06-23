@@ -68,3 +68,4 @@ Existem varios bancos de dados para o Linux, um dos mais famosos e o meu xodó �
 
 Eu sei que tanta teoria assim pode parecer bem chato no inicio, mas o mundo Linux é muito grande, e logo vamos começar a ter conteudos mais tecnicos aqui. Nos vemos na proxima parte aonde vamos falar sobre as licenças OpenSource.
 
+[Próximo](./3-Licenças.md)
