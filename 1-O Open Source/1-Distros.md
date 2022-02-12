@@ -5,7 +5,7 @@ Sejam bem vindos ao curso de Linux da [He4rt Developers](discord.io/He4rt), aqui
 Para começar preciso explicar uma coisa, o sistemas do Pinguim é um sistema modular, que é composto por varias partes que combinam entre si. Essas partes são compostas desde Softwares que se comunicam com o Hardware diretamente até Interfaces, mas não se assuste, vamos explicar tudo aqui, vamos passar por todos os tópicos abaixo.
 
 * Kernel
-* Grenciador de Pacotes
+* Gerenciador de Pacotes
 * Drivers
 * Ferramentas GNU
 * Shell
