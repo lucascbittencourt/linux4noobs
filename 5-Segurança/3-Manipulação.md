@@ -9,7 +9,7 @@
 
 ---
 
- As permissões dentro de um sistema Linux protegem os arquivos e diretórios do acesso indeviduo ou não autorizado de algum usuário. São as permissões que impedem que algum software malicioso cause estragos no nosso sistema. Vamos entender algumas coisas sobre permissões.
+ As permissões dentro de um sistema Linux protegem os arquivos e diretórios do acesso indevido ou não autorizado de algum usuário. São as permissões que impedem que algum software malicioso cause estragos no nosso sistema. Vamos entender algumas coisas sobre permissões.
 
 > ### <span id="donos"> Donos, Grupos e usuários </span>
 
