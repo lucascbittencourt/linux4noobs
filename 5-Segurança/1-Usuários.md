@@ -160,9 +160,9 @@ users:x:985:lucashe4rt
 
 Podemos observar que, assim como no arquivo passwd, esta linha contém vários campos separados por dois pontos `:`. Vamos entender melhor cada campo respectivamente.
 
-* **lucashe4rt** - nome excluisivo do grupo;
+* **lucashe4rt** - nome exclusivo do grupo;
 * **x** - informação utilizada para validar a senha do grupo.
-  * *Este campo como esta definido por "x" ele contém a informação de senha real armazenado no arquivo [/etc/gshadow](https://gnulinuxbr.wordpress.com/2009/07/14/arquivo-etcgshadow/) separado.*
+  * *Este campo como esta definido por "x" contém a informação de senha real armazenado no arquivo [/etc/gshadow](https://gnulinuxbr.wordpress.com/2009/07/14/arquivo-etcgshadow/) separado.*
 * **985** - número exclusivo de identificação do grupo;
 * **lucashe4rt** - lista dos nomes dos usuários que pertecem ao grupo.
 
