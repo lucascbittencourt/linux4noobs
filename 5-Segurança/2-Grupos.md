@@ -98,7 +98,7 @@ opção | função
 
 #### Senha
 
-Para congfigurarmos ou alteramos a senha de um usuário utilizamos o comando `passwd`.
+Para configurarmos ou alteramos a senha de um usuário utilizamos o comando `passwd`.
 
 Sintaxe
 
