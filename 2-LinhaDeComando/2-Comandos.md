@@ -232,7 +232,7 @@ tmpfs           3.9G  4.0K  3.9G   1% /tmp
 tmpfs           789M   12K  789M   1% /run/user/1001
 ```
 
-* `-k` - Lista em Kbyts. Exemplo:
+* `-k` - Lista em Kbytes. Exemplo:
 
 ```console
 lucashe4rt@He4rt:~$ df -k
@@ -318,7 +318,7 @@ manda pros amigo tb$
 vc é d+++$
 ```
 
-* `-n` - Mostra a quantidade de linas do arquivo. Exemplo:
+* `-n` - Mostra a quantidade de linhas do arquivo. Exemplo:
 
 ```console
 lucashe4rt@He4rt-PC:~$ cat -n arquivo.txt 
